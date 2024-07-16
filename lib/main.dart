@@ -3,15 +3,17 @@ import 'package:provider/provider.dart';
 import 'data_provider.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
       create: (context) => DataProvider(),
-      child: MaterialApp(
+      child: const MaterialApp(
         home: DataScreen(),
       ),
     );
@@ -19,19 +21,21 @@ class MyApp extends StatelessWidget {
 }
 
 class DataScreen extends StatelessWidget {
+  const DataScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     final dataProvider = Provider.of<DataProvider>(context);
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Data Dashboard'),
+        title: const Text('Data Dashboard'),
       ),
       body: FutureBuilder(
         future: dataProvider.fetchData(),
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
-            return Center(child: CircularProgressIndicator());
+            return const Center(child: CircularProgressIndicator());
           } else if (snapshot.hasError) {
             return Center(child: Text('Error: ${snapshot.error}'));
           } else {

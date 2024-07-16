@@ -1,16 +1,23 @@
-# flutter_web_dashboard
+## Flutter Web Dashboard with Python and MySQL
 
-A new Flutter project.
+This project demonstrates how to create a web dashboard using Flutter, with data fetched from a MySQL database via a Python Flask backend.
 
-## Getting Started
+## Table of Contents
+Prerequisites
 
-This project is a starting point for a Flutter application.
+Setup MySQL Database
 
-A few resources to get you started if this is your first Flutter project:
+Python Backend
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Flutter Web Dashboard
+Running the Applications
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Prerequisites
+
+MySQL installed on your system.
+
+Python 3.x installed on your system.
+
+Flutter installed on your system. 
+
+Follow the official installation guide if you haven't set it up yet.

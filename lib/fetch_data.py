@@ -1,5 +1,6 @@
 import mysql.connector
 
+
 def fetch_data():
     # Connect to the database
     conn = mysql.connector.connect(
@@ -21,6 +22,7 @@ def fetch_data():
     conn.close()
 
     return rows
+
 
 if __name__ == "__main__":
     data = fetch_data()

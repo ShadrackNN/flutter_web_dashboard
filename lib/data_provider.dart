@@ -9,7 +9,7 @@ class DataProvider with ChangeNotifier {
   List<DataModel> get data => _data;
 
   Future<void> fetchData() async {
-    final response = await http.get(Uri.parse('http://192.168.56.1:5000/data'));
+    final response = await http.get(Uri.parse('http://127.0.0.1:5000/data'));
 
     if (response.statusCode == 200) {
       final List<dynamic> dataJson = json.decode(response.body);
